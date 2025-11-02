@@ -6,17 +6,15 @@ This project supports Patient and Encounter management with CRUD, search, pagina
 It follows a clean layered architecture: Controller → Service → Repository → Database. The design aligns with digital health interoperability principles like modularity, data quality, and scalability
 
 # Technologies Used
-
-# Category         | Technology                |
- | ---------------- | ------------------------- |
- | Language         | Java 17                   |
- | Framework        | Spring Boot 3.3.x         |
- | Database         | H2 (in-memory)            |
- | Build Tool       | Maven                     |
- | API Design       | RESTful                   |
- | Containerization | Docker                    |
- | Testing          | JUnit 5, Spring Boot Test |
-
+| Category         | Technology                |
+| ---------------- | ------------------------- |
+| Language         | Java 17                   |
+| Framework        | Spring Boot 3.3.x         |
+| Database         | H2 (in-memory)            |
+| Build Tool       | Maven                     |
+| API Design       | RESTful                   |
+| Containerization | Docker                    |
+| Testing          | JUnit 5, Spring Boot Test |
 
 # Features
 
@@ -30,7 +28,7 @@ It follows a clean layered architecture: Controller → Service → Repository �
 ✅ Docker support for easy deployment
 
 # Project Architecture
-starter-project/
+```starter-project/
 │
 ├── src/
 │   ├── main/
@@ -56,6 +54,7 @@ starter-project/
 ├── Dockerfile
 └── README.md
 
+```
 
 # Getting Started
 Prerequisites
@@ -67,7 +66,7 @@ Maven 3.8+
 Docker (for containerized run)
 
 # Run Locally (no Docker)
-# Build the project
+Build the project
 mvn clean package
 
 # Run the Spring Boot app
@@ -81,7 +80,7 @@ mvn spring-boot:run
 docker build -t digital-health-exercise .
 
 # Run container with API key
-docker run -d -p 8080:8080 -e API_KEY=secret123 --name digital-health digital-health-exercise
+docker run -d -p 8080:8080 -e API_KEY=YourAPIKey --name digital-health digital-health-exercise
 
 # API will be available at:
 http://localhost:8080/api/patients
@@ -108,7 +107,7 @@ X-API-KEY: your-secret-key
 # Example using curl:
 
 # Successful request
-curl -i -H "X-API-KEY: secret123" http://localhost:8080/api/patients
+curl -i -H "X-API-KEY: YourAPIKey" http://localhost:8080/api/patients
 
 # Unauthorized request
 curl -i -H "X-API-KEY: wrongkey" http://localhost:8080/api/patients
@@ -122,18 +121,18 @@ Note: The API key is set in Docker using the -e API_KEY=<your-key> flag or in lo
 
 curl -X POST http://localhost:8080/api/patients \
 -H "Content-Type: application/json" \
--H "X-API-KEY: secret123" \
+-H "X-API-KEY: YourAPIKey" \
 -d '{
   "identifier": "P001",
-  "givenName": "Levin",
-  "familyName": "Munyelele",
+  "givenName": "Jane",
+  "familyName": "Doe",
   "birthDate": "1998-03-20",
-  "gender": "M"
+  "gender": "F"
 }'
 '
 
 # Search Patients  
-curl -i -H "X-API-KEY: secret123" "http://localhost:8080/api/patients?given=Levin&page=0&size=5"
+curl -i -H "X-API-KEY: YourAPIKey" "http://localhost:8080/api/patients?given=Jane&page=0&size=5"
 
 # Validation & Error Handling
 Missing fields or invalid data return 400 Bad Request with descriptive errors.
@@ -213,10 +212,10 @@ Sample Response (Paginated Search)
     {
       "id": 1,
       "identifier": "P001",
-      "givenName": "Levin",
-      "familyName": "Munyelele",
+      "givenName": "Jane",
+      "familyName": "Doe",
       "birthDate": "1998-03-20",
-      "gender": "M"
+      "gender": "F"
     }
   ],
   "currentPage": 0,
@@ -234,4 +233,5 @@ All rights reserved to the author — Levin Munyelele.
 # Final Notes
 
 “Software that saves lives starts with reliable data.”
+
 This backend prototype focuses on clean, validated, and extensible digital health data services, a strong foundation for systems like OpenMRS or DHIS2 integration.
