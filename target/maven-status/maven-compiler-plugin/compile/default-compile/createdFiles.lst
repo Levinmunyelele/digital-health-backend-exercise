@@ -1,0 +1,15 @@
+org/example/exception/ApiExceptionHandler.class
+org/example/patient/model/Encounter.class
+org/example/exception/ResourceNotFoundException.class
+org/example/ExerciseApplication.class
+org/example/patient/spec/PatientSpecification.class
+org/example/patient/security/ApiKeyFilter.class
+org/example/patient/repository/PatientRepository.class
+org/example/patient/controller/EncounterController.class
+org/example/patient/service/PatientService.class
+org/example/patient/repository/EncounterRepository.class
+org/example/patient/model/Patient.class
+org/example/patient/controller/PatientController.class
+org/example/patient/service/EncounterService.class
+org/example/patient/dto/PatientDto.class
+org/example/patient/config/SecurityConfig.class

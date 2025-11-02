@@ -1,0 +1,15 @@
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/ExerciseApplication.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/exception/ApiExceptionHandler.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/exception/ResourceNotFoundException.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/config/SecurityConfig.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/controller/EncounterController.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/controller/PatientController.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/dto/PatientDto.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/model/Encounter.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/model/Patient.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/repository/EncounterRepository.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/repository/PatientRepository.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/security/ApiKeyFilter.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/service/EncounterService.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/service/PatientService.java
+/home/munyelele/ohs-backend-developer-exercise/starter-project/src/main/java/org/example/patient/spec/PatientSpecification.java
