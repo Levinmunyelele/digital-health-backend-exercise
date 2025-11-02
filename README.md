@@ -87,7 +87,6 @@ docker run -d -p 8080:8080 -e API_KEY=secret123 --name digital-health digital-he
 http://localhost:8080/api/patients
 
 
-
 # API Endpoints
 | Method   | Endpoint                       | Description                                                                                              |
 | -------- | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
